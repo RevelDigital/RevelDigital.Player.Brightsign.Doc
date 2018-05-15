@@ -913,6 +913,24 @@ img { max-width: 100%; }
 			<a href="controller.html" class="tsd-kind-icon">Controller</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="controller.html#onbeaconcallback" class="tsd-kind-icon">on<wbr>Beacon<wbr>Callback</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="controller.html#oncommandcallback" class="tsd-kind-icon">on<wbr>Command<wbr>Callback</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="controller.html#onmediaplayed" class="tsd-kind-icon">on<wbr>Media<wbr>Played</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="controller.html#ontemplateclicked" class="tsd-kind-icon">on<wbr>Template<wbr>Clicked</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="controller.html#ontemplateinitialized" class="tsd-kind-icon">on<wbr>Template<wbr>Initialized</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="controller.html#ontemplateterminated" class="tsd-kind-icon">on<wbr>Template<wbr>Terminated</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
 					<a href="controller.html#platform" class="tsd-kind-icon">platform</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -963,6 +981,12 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#onbeaconcallback" class="tsd-kind-icon">on<wbr>Beacon<wbr>Callback</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#oncommandcallback" class="tsd-kind-icon">on<wbr>Command<wbr>Callback</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#onmediaplayed" class="tsd-kind-icon">on<wbr>Media<wbr>Played</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#ontemplateclicked" class="tsd-kind-icon">on<wbr>Template<wbr>Clicked</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#ontemplateinitialized" class="tsd-kind-icon">on<wbr>Template<wbr>Initialized</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#ontemplateterminated" class="tsd-kind-icon">on<wbr>Template<wbr>Terminated</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="controller.html#platform" class="tsd-kind-icon">platform</a></li>
 						</ul>
 					</section>
@@ -986,12 +1010,150 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="onbeaconcallback" class="tsd-anchor"></a>
+				<h3>on<wbr>Beacon<wbr>Callback</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Beacon<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/beacon.beaconrootobject.html" class="tsd-signature-type">BeaconRootObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter&lt;BeaconRootObject&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L82">app/app.component.ts:82</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Use Subscribe format. Will receive <a href="../interfaces/beacon.beaconrootobject.html">BeaconRootObject</a> on callback.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://angular.io/api/core/EventEmitter">https://angular.io/api/core/EventEmitter</a></p>
+						</dd>
+						<dt>type</dt>
+						<dd><p>EventEmitter<any></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="oncommandcallback" class="tsd-anchor"></a>
+				<h3>on<wbr>Command<wbr>Callback</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Command<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/command.commandrootobject.html" class="tsd-signature-type">CommandRootObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter&lt;CommandRootObject&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L112">app/app.component.ts:112</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Use Subscribe format. Will receive <a href="../interfaces/command.commandrootobject.html">CommandRootObject</a> on callback.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://angular.io/api/core/EventEmitter">https://angular.io/api/core/EventEmitter</a></p>
+						</dd>
+						<dt>type</dt>
+						<dd><p>EventEmitter<any></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="onmediaplayed" class="tsd-anchor"></a>
+				<h3>on<wbr>Media<wbr>Played</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Media<wbr>Played<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/affidavitslog.affidavitslogrootobject.html" class="tsd-signature-type">AffidavitsLogRootObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter&lt;AffidavitsLogRootObject&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L130">app/app.component.ts:130</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Use Subscribe format. Will receive <a href="../interfaces/affidavitslog.affidavitslogrootobject.html">AffidavitsLogRootObject</a> on callback.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://angular.io/api/core/EventEmitter">https://angular.io/api/core/EventEmitter</a></p>
+						</dd>
+						<dt>type</dt>
+						<dd><p>EventEmitter<any></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="ontemplateclicked" class="tsd-anchor"></a>
+				<h3>on<wbr>Template<wbr>Clicked</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Template<wbr>Clicked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter&lt;MouseEvent&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L76">app/app.component.ts:76</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Use Subscribe format. Will receive <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent</a> on callback.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://angular.io/api/core/EventEmitter">https://angular.io/api/core/EventEmitter</a></p>
+						</dd>
+						<dt>type</dt>
+						<dd><p>EventEmitter<any></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="ontemplateinitialized" class="tsd-anchor"></a>
+				<h3>on<wbr>Template<wbr>Initialized</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Template<wbr>Initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter&lt;null&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L118">app/app.component.ts:118</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Use Subscribe format. Will receive null on callback.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://angular.io/api/core/EventEmitter">https://angular.io/api/core/EventEmitter</a></p>
+						</dd>
+						<dt>type</dt>
+						<dd><p>EventEmitter<any></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="ontemplateterminated" class="tsd-anchor"></a>
+				<h3>on<wbr>Template<wbr>Terminated</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Template<wbr>Terminated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new EventEmitter&lt;null&gt;()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L124">app/app.component.ts:124</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Use Subscribe format. Will receive null on callback.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p><a href="https://angular.io/api/core/EventEmitter">https://angular.io/api/core/EventEmitter</a></p>
+						</dd>
+						<dt>type</dt>
+						<dd><p>EventEmitter<any></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 				<a name="platform" class="tsd-anchor"></a>
 				<h3>platform</h3>
 				<div class="tsd-signature tsd-kind-icon">platform<span class="tsd-signature-symbol">:</span> <a href="platformresolverservice.html" class="tsd-signature-type">PlatformResolverService</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L109">app/app.component.ts:109</a></li>
+						<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L151">app/app.component.ts:151</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1002,13 +1164,13 @@ img { max-width: 100%; }
 				<a name="getdevice" class="tsd-anchor"></a>
 				<h3>get<wbr>Device</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Device<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Device<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/schedule.device.html" class="tsd-signature-type">Device</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L474">app/app.component.ts:474</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L537">app/app.component.ts:537</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1016,8 +1178,7 @@ img { max-width: 100%; }
 								<p>Returns information related to the device currently running the script.</p>
 							</div>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						<p>JSON format of device. Refer To Main Page Section - Device JSON Structure</p>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/schedule.device.html" class="tsd-signature-type">Device</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -1031,7 +1192,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L484">app/app.component.ts:484</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L547">app/app.component.ts:547</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1053,7 +1214,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L494">app/app.component.ts:494</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L557">app/app.component.ts:557</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1069,13 +1230,13 @@ img { max-width: 100%; }
 				<a name="getschedule" class="tsd-anchor"></a>
 				<h3>get<wbr>Schedule</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Schedule<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Schedule<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/schedule.schedule-1.html" class="tsd-signature-type">Schedule</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L504">app/app.component.ts:504</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L567">app/app.component.ts:567</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1083,7 +1244,7 @@ img { max-width: 100%; }
 								<p>Returns the active schedule or null if nothing is scheduled for the current time.</p>
 							</div>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/schedule.schedule-1.html" class="tsd-signature-type">Schedule</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -1097,7 +1258,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L466">app/app.component.ts:466</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L530">app/app.component.ts:530</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1119,7 +1280,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L514">app/app.component.ts:514</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L577">app/app.component.ts:577</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1141,7 +1302,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L454">app/app.component.ts:454</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L518">app/app.component.ts:518</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1163,7 +1324,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L528">app/app.component.ts:528</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L591">app/app.component.ts:591</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1185,7 +1346,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/7612884/RevelWebPlayerV0.1/src/app/app.component.ts#L520">app/app.component.ts:520</a></li>
+								<li>Defined in <a href="https://github.com/RevelDigital/RevelDigital.Player.Web/blob/65d72f0/RevelWebPlayerV0.1/src/app/app.component.ts#L583">app/app.component.ts:583</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
