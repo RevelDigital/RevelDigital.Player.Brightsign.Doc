@@ -966,12 +966,14 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-class">
 			<a href="classes/webpagecomponent.html" class="tsd-kind-icon">Webpage<wbr>Component</a>
 		</li>
-    
 		<li class=" tsd-kind-interface">
 			<a href="interfaces/irevelcontrol.html" class="tsd-kind-icon">IRevel<wbr>Control</a>
 		</li>
 		<li class=" tsd-kind-interface">
 			<a href="interfaces/itemplate.html" class="tsd-kind-icon">ITemplate</a>
+		</li>
+		<li class=" tsd-kind-object-literal">
+			<a href="globals.html#platforms" class="tsd-kind-icon">platforms</a>
 		</li>
 	</ul>
 </nav>
@@ -1023,7 +1025,7 @@ Controller.onTemplateClicked.subscribe(
 				</li>
 				<li><p>Text - Static text.</p>
 				</li>
-				<li><p>RichText - </p>
+				<li><p>RichText - Richly formatted text.</p>
 				</li>
 				<li><p>Image - Image slideshow with transitions.</p>
 				</li>
@@ -1031,9 +1033,9 @@ Controller.onTemplateClicked.subscribe(
 				</li>
 				<li><p>Ticker - Scrolling marquee/ticker.</p>
 				</li>
-				<li><p>Shape - </p>
+				<li><p>Shape - An image of a shape</p>
 				</li>
-				<li><p>QRCode - </p>
+				<li><p>QRCode - A QR code of text</p>
 				</li>
 				<li><p>HotSpot - Touch regions in kiosk applications.</p>
 				</li>
@@ -1042,98 +1044,78 @@ Controller.onTemplateClicked.subscribe(
 				<li><p>Page - A container for other components to give a group of components page behavior</p>
 				</li>
 			</ul>
-			<h3 id="brightscript-javascript-objects-objects-are-available-in-script">BrightScript-JavaScript Objects Objects Are Available In Script</h3>
+			<h3 id="brightscript-javascript-objects-are-available-in-script">BrightScript-JavaScript Objects Are Available In Script</h3>
 			<p><a href="https://docs.brightsign.biz/display/DOC/BrightScript-JavaScript+Objects">BrightScript-Javascript Objects</a></p>
 			<p>Example: </p>
-			<pre><code>
-</code></pre><p>These Objects can give more control/interface with the BrightSign Player and its hardware.</p>
-			<h2 id="device-json-structure">Device JSON Structure</h2>
-			<pre><code>
-<span class="hljs-built_in">id</span>: <span class="hljs-built_in">number</span>,
-<span class="hljs-built_in">name</span>: <span class="hljs-built_in">string</span>,
-opaqueid: <span class="hljs-built_in">string</span>,
-groupname: <span class="hljs-built_in">string</span>,
-description: <span class="hljs-built_in">string</span>,
-devicetype: <span class="hljs-built_in">string</span>,
-devicecaps: <span class="hljs-built_in">number</span>,
-key: <span class="hljs-built_in">string</span>,
-timezone: <span class="hljs-built_in">string</span>,
-enteredservice: <span class="hljs-built_in">string</span>,
-lastservice: <span class="hljs-built_in">string</span>,
-lastupdate: <span class="hljs-built_in">string</span>,
-accounttype: <span class="hljs-built_in">string</span>,
-location: {
-    address1: <span class="hljs-built_in">string</span>,
-    address2: <span class="hljs-built_in">string</span>,
-    city: <span class="hljs-built_in">string</span>,
-    county: <span class="hljs-built_in">string</span>,
-    state: <span class="hljs-built_in">string</span>,
-    postalcode: <span class="hljs-built_in">string</span>,
-    country: <span class="hljs-built_in">string</span>,
-    latitude: <span class="hljs-built_in">string</span>,
-    longitude: <span class="hljs-built_in">string</span>,
-    nwszoneid: <span class="hljs-built_in">string</span>
-},
-beacon: N/A
+			<pre><code>console.log(new BSDeviceInfo());
+<span class="hljs-symbol">
+output:</span> {
+<span class="hljs-symbol">            bootVersion:</span> <span class="hljs-string">"7.0.16"</span>
+<span class="hljs-symbol">            deviceBootCount:</span> <span class="hljs-number">0</span>
+<span class="hljs-symbol">            deviceLifetime:</span> <span class="hljs-number">0</span>
+<span class="hljs-symbol">            deviceUniqueId:</span> <span class="hljs-string">"L8J7AH001774"</span>
+<span class="hljs-symbol">            deviceUptime:</span> <span class="hljs-number">6621</span>
+<span class="hljs-symbol">            family:</span> <span class="hljs-string">"impala"</span>
+<span class="hljs-symbol">            model:</span> <span class="hljs-string">"XT1143"</span>
+<span class="hljs-symbol">            version:</span> <span class="hljs-string">"7.0.60"</span>
+        }
+</code></pre><p>These Objects can give more control/interface with the BrightSign Player and its hardware. </p>
+			<h5 id="for-cross-platform-scripts-check-if-the-type-is-undefined-and-handle-the-object-appropriately-">For cross-platform scripts check if the type is undefined and handle the object appropriately.</h5>
+			<pre><code> <span class="hljs-keyword">if</span>((typeof new <span class="hljs-type">BSDeviceInfo</span>()) !== 'undefined'){
+    //your <span class="hljs-type">BrightSign</span> <span class="hljs-type">Specific</span> <span class="hljs-type">Code</span> <span class="hljs-type">Here</span>
+ }
 
-</code></pre><h2 id="schedule-json-structure">Schedule JSON Structure</h2>
-			<pre><code>
-
-<span class="vim">id: <span class="hljs-keyword">number</span>,
-opaqueid: <span class="hljs-built_in">string</span>,
-<span class="hljs-built_in">type</span>: <span class="hljs-built_in">string</span>,
-name: <span class="hljs-built_in">string</span>,
-groupname: <span class="hljs-built_in">string</span>,
-starttime: <span class="hljs-built_in">string</span>,
-endtime: <span class="hljs-built_in">string</span>,
-startdate: <span class="hljs-built_in">string</span>,
-enddate: <span class="hljs-built_in">string</span>,
-day<span class="hljs-variable">s:</span> <span class="hljs-keyword">number</span>,
-description: <span class="hljs-built_in">string</span>,
-playlis<span class="hljs-variable">t:</span> <span class="hljs-keyword">N</span>/A,
-template: <span class="hljs-keyword">N</span>/A,
-<span class="hljs-keyword">command</span><span class="hljs-variable">s:</span> [
-  {
-    name: <span class="hljs-built_in">string</span>,
-    <span class="hljs-keyword">ar</span><span class="hljs-variable">g:</span> <span class="hljs-built_in">string</span>
-  }
-],
-condition<span class="hljs-variable">s:</span> [],
-
-</span>
-</code></pre><h2 id="options-json-structure">Options JSON Structure</h2>
-			<pre><code>
 </code></pre><h2 id="examples">Examples</h2>
-			<h3 id="listening-for-a-command">Listening For A Command</h3>
-			<pre><code>
-
-<span class="undefined"></span>
+			<h3 id="listening-for-a-click-or-gesture">Listening For A Click Or Gesture</h3>
+			<pre><code>Controller.commandListener.subscribe(
+    <span class="hljs-function"><span class="hljs-params">(command: BeaconRootObject)</span> =&gt;</span>{
+        <span class="hljs-built_in">console</span>.log(command);
+    });
+</code></pre><h3 id="listening-for-a-command">Listening For A Command</h3>
+			<pre><code>Controller.onCommandCallback.subscribe(
+    <span class="hljs-function"><span class="hljs-params">(command: CommandRootObject)</span> =&gt;</span>{
+        <span class="hljs-built_in">console</span>.log(command);
+    }
+);
 </code></pre><h3 id="creating-a-custom-animation">Creating A Custom Animation</h3>
 			<p><a href="https://greensock.com/docs/TweenMax">GSAP</a> is used for animations. To create a custom animation use the animate method of a module.</p>
-			<pre><code>
-
-<span class="undefined"></span>
+			<p> The first parameter is the duration of the animation. The second is an TweenMax formatted object (Look at GSAP docs for more info). </p>
+			<pre><code> <span class="hljs-selector-tag">Module</span><span class="hljs-selector-class">.animate</span>(1, {<span class="hljs-attribute">scale</span>:<span class="hljs-number">5</span>});
 </code></pre><h3 id="using-an-animation-listener">Using An Animation Listener</h3>
-			<pre><code>
-
-<span class="undefined"></span>
+			<pre><code>Module.onAnimation.subscribe(
+    <span class="hljs-function"><span class="hljs-params">(event: AnimationCallbackRootObject)</span> =&gt;</span>{
+        <span class="hljs-built_in">console</span>.log(event);
+    }
+);
 </code></pre><h3 id="listening-for-a-beacon-and-associated-user">Listening For A Beacon and Associated User</h3>
-			<pre><code>
-
-<span class="undefined"></span>
+			<pre><code>Controller.onBeaconCallback.subscribe(
+    <span class="hljs-function"><span class="hljs-params">(arg: BeaconRootObject)</span> =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Beacon Event'</span>, arg);
+    }
+);  
 </code></pre><h2 id="known-issues">Known Issues</h2>
 			<ul>
 				<li>Global click event is not sent when click occurs within WebZones</li>
 				<li>MarqueeZones are not optimized and can cause performance issues</li>
 			</ul>
 			<h2 id="license">License</h2>
-			<p>This project is closed source and can not be copied and/or distributed without the express permission of Revel Digital - see the <a href="LICENSE.md">LICENSE.md</a> file for details</p>
+			<p>This project is closed source and can not be copied and/or distributed without the express permission of Revel Digital - see the <a href="LICENSE.md">LICENSE</a> file for details</p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
+					<section class="tsd-index-section tsd-is-not-exported">
+						<h3>Modules</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/affidavitslog.html" class="tsd-kind-icon">affidavits<wbr>Log</a></li>
+							<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/animationcallbackevent.html" class="tsd-kind-icon">animation<wbr>Callback<wbr>Event</a></li>
+							<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/beacon.html" class="tsd-kind-icon">beacon</a></li>
+							<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/command.html" class="tsd-kind-icon">command</a></li>
+							<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/schedule.html" class="tsd-kind-icon">schedule</a></li>
+						</ul>
+					</section>
 					<section class="tsd-index-section tsd-is-external">
 						<h3>Enumerations</h3>
 						<ul class="tsd-index-list">
@@ -1143,7 +1125,6 @@ condition<span class="hljs-variable">s:</span> [],
 					<section class="tsd-index-section ">
 						<h3>Classes</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-class tsd-is-external"><a href="classes/alertcomponent.html" class="tsd-kind-icon">Alert<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/basecomponent.html" class="tsd-kind-icon">Base<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/clockcomponent.html" class="tsd-kind-icon">Clock<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/controller.html" class="tsd-kind-icon">Controller</a></li>
@@ -1152,10 +1133,11 @@ condition<span class="hljs-variable">s:</span> [],
 							<li class="tsd-kind-class"><a href="classes/hotspotcomponent.html" class="tsd-kind-icon">Hotspot<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/imagecomponent.html" class="tsd-kind-icon">Image<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/marqueecomponent.html" class="tsd-kind-icon">Marquee<wbr>Component</a></li>
-							<li class="tsd-kind-class tsd-is-external"><a href="classes/menucomponent.html" class="tsd-kind-icon">Menu<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/pagecomponent.html" class="tsd-kind-icon">Page<wbr>Component</a></li>
+							<li class="tsd-kind-class"><a href="classes/platformresolverservice.html" class="tsd-kind-icon">Platform<wbr>Resolver<wbr>Service</a></li>
 							<li class="tsd-kind-class"><a href="classes/qrcodecomponent.html" class="tsd-kind-icon">Qr<wbr>Code<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/richtextcomponent.html" class="tsd-kind-icon">Rich<wbr>Text<wbr>Component</a></li>
+							<li class="tsd-kind-class tsd-is-external"><a href="classes/safepipe.html" class="tsd-kind-icon">Safe<wbr>Pipe</a></li>
 							<li class="tsd-kind-class"><a href="classes/shapecomponent.html" class="tsd-kind-icon">Shape<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/slideshowcomponent.html" class="tsd-kind-icon">Slideshow<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/slideshowv2component.html" class="tsd-kind-icon">Slideshow<wbr>V2Component</a></li>
@@ -1163,7 +1145,6 @@ condition<span class="hljs-variable">s:</span> [],
 							<li class="tsd-kind-class"><a href="classes/textcomponent.html" class="tsd-kind-icon">Text<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/tvtunercomponent.html" class="tsd-kind-icon">Tv<wbr>Tuner<wbr>Component</a></li>
 							<li class="tsd-kind-class"><a href="classes/webpagecomponent.html" class="tsd-kind-icon">Webpage<wbr>Component</a></li>
-
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -1174,11 +1155,15 @@ condition<span class="hljs-variable">s:</span> [],
 						</ul>
 					</section>
 
+					<section class="tsd-index-section ">
+						<h3>Object literals</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-object-literal"><a href="globals.html#platforms" class="tsd-kind-icon">platforms</a></li>
+						</ul>
+					</section>
 				</div>
 			</section>
 		</section>
-
-
 		<footer>
 			<div class="container">
 				<h2>Legend</h2>
